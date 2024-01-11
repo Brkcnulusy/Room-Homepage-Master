@@ -1,0 +1,22 @@
+@import './main/main';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

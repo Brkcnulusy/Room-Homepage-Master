@@ -1,0 +1,167 @@
+main {
+    width: 1440px;
+    height: 800px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .section-top {
+        width: 100%;
+        height: 67%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .banner {
+            width: 840;
+            height: 100%;
+            position: relative;
+            .navbar-wrapper {
+                width: 100%;
+                height: 90px;
+                position: absolute;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                gap: 56px;
+                padding-left: 64px;
+                h2 {
+                    font-size: 28px;
+                    color: #fff;
+                    padding-bottom: 8px;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        gap: 50px;
+                        
+                        li {
+                            list-style-type: none;
+                            width: 15px;
+                            border-bottom: 2px solid transparent;
+                            &:hover {
+                                border-color: #fff;
+                            }
+                            a {
+                                width: 15px;
+                                text-decoration: none;
+                                color: #fff;
+                                font-size: 16px;
+                                padding-bottom: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                inset: 0;
+                object-fit: cover;
+            }
+        }
+        .top-text-wrapper {
+            width: 600px;
+            height: 100%;position: relative;
+            padding: 120px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 30px;
+            position: relative;
+            h2 {
+                font-size: 46px;
+            }
+            p {
+                font-size: 16px;
+                opacity: 0.5;
+                line-height: 22px;
+            }
+            span {
+                font-size: 18px;
+                opacity: 0.5;
+                letter-spacing: 10px;
+            }
+            .button-wrapper {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                button {
+                    border: hidden;
+                    width: 80px;
+                    height: 80px;
+                    background-color: #000000;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #444444;
+                    }
+                    &:active {
+                        position: relative;
+                        top: 1px;
+                        width: 79px;
+                        height: 79px;
+                    }
+                }
+            }
+        }
+    }
+    .section-bottom {
+        width: 100%;
+        height: 266px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .left-image-wrapper {
+            width: 420px;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                inset: 0;
+            }
+
+        }
+        .bottom-text-wrapper {
+            width: 580px;
+            height: 266px;
+            padding: 64px 46px 60px 46px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 18px;
+            h2 {
+                font-size: 18px;
+                letter-spacing: 5px;
+                font-weight: 1000;
+            }
+            p {
+                font-size: 15px;
+                opacity: 0.5;
+                line-height: 21px;
+            }
+        }
+        .right-image-wrapper {
+            width: 440px;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                inset: 0;
+            }
+        }
+    }
+}
