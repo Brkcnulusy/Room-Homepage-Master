@@ -5,18 +5,33 @@ const roomHomePage = function () {
     const nextButton = document.querySelector('.js-next-button');
     const backButton = document.querySelector('.js-back-button');
     const images = document.querySelectorAll('.js-galeri img');
+    const hamburgerMenu = document.querySelector('.js-hamburger');
+    const navbar = document.querySelector('.js-navbar');
 
     let currentIndex = 0;
-
-    console.log(nextButton);
-    console.log(backButton);
 
     // EventListeners
 
     const _eventListeners = function () {
         nextButton.addEventListener('click', _nextImage);
         backButton.addEventListener('click', _backImage);
+        hamburgerMenu.addEventListener('click', _openHamburgerMenu);
+        document.addEventListener('click', function(e){
+            const targetElement = e.target;
+            _closeNavbar(targetElement);
+        });
     }
+
+    const _closeNavbar = function(target) {
+        if(target.closest(".js-close-icon")) {
+            navbar.style.display = 'none';
+        }
+    }
+
+    const _openHamburgerMenu = function() {
+        navbar.style.display = 'flex';
+    }
+
     const _showImage = function(Index) {
         images.forEach((image)=>{
             image.style.display = 'none';
